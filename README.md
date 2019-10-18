@@ -1,7 +1,7 @@
 # sfdc-recipe-rest-create-envelope
 
 ## Introduction:
-This repository will aid end users in sending Envelopes from Salesforce using DocuSign for Salesforce, Apex and REST API.
+This repository will aid end users in sending Envelopes from Salesforce using DocuSign eSignature for Salesforce, Apex and REST API.
 This will be useful especially when business requirements require envelopes to be sent out without users clicking on Send with DocuSign. We will be using JWT Authentication for authenticating to DocuSign REST API's and then sending the envelope using REST API. This recipe will serve as a building block for users to customize and apply their own strategies while sending envelopes from Salesforce using Apex.
 
 ## Pre-requisites:
@@ -11,18 +11,18 @@ https://developer.salesforce.com/signup
 - Get a DocuSign Developer account
 https://go.docusign.com/o/sandbox
 
-- Install DocuSign for Salesforce Managed package in your Salesforce org
+- Install DocuSign eSignature for Salesforce Managed package in your Salesforce org
 https://appexchange.salesforce.com/appxListingDetail?listingId=a0N30000001taX4EAI 
 
 ## Problem Statement:
-Universal containers use DocuSign for electronically signing key Business documents. They use Salesforce as their CRM system and have DocuSign for Salesforce installed in their Salesforce instance.The Sales reps at Universal Containers use out of the box buttons provided by DocuSign for Salesforce to send Orders to prospective clients.The Legal department requires Approval documents to be sent dynamically based on certain business rules and does not want reps to manually send Envelopes.
+Universal containers use DocuSign for electronically signing key Business documents. They use Salesforce as their CRM system and have DocuSign eSignature for Salesforce installed in their Salesforce instance.The Sales reps at Universal Containers use out of the box buttons provided by DocuSign eSignature for Salesforce to send Orders to prospective clients.The Legal department requires Approval documents to be sent dynamically based on certain business rules and does not want reps to manually send Envelopes.
 
 ## Solution:
 Configure Envelope sending via Apex. This Apex Utility class can then be used in either triggers / Process Builders / Scheduled jobs to achieve the business requirement of dynamically sending an envelope from Salesforce.
 
 
 ##  Building Blocks:
-- Install DocuSign for Salesforce
+- Install DocuSign eSignature for Salesforce
 - DocuSign Integrator Key setup.
 - DocuSign Template Setup.
 - Installing Github source.
@@ -31,8 +31,8 @@ Configure Envelope sending via Apex. This Apex Utility class can then be used in
 
 ## Step by Step Walkthrough
   
-  ### 1. Install DocuSign for Salesforce
-  After setting up a Salesforce Developer account as well as a DocuSign Developer account, [Install DocuSign for Salesforce from AppExchange](https://appexchange.salesforce.com/listingDetail?listingId=a0N30000001taX4EAI) in your Salesforce org.
+  ### 1. Install DocuSign eSignature for Salesforce
+  After setting up a Salesforce Developer account as well as a DocuSign Developer account, [Install DocuSign eSignature for Salesforce from AppExchange](https://appexchange.salesforce.com/listingDetail?listingId=a0N30000001taX4EAI) in your Salesforce org.
   
   ### 2. DocuSign Integrator key setup 
   - Login to your DocuSign Developer Sandbox and click on **Go to Admin** . 
